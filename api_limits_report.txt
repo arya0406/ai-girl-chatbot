@@ -1,0 +1,104 @@
+Google Generative AI API Limit Checker
+=====================================
+Using API key: AIzaSyBy...zp-c
+Time: 2025-09-03 15:20:46
+
+Fetching available models...
+
+Available Models:
+- models/embedding-gecko-001
+  Display Name: Embedding Gecko
+  Description: Obtain a distributed representation of a text.
+  Generation Methods: embedText, countTextTokens
+  Input Token Limit: 1024
+  Output Token Limit: 1
+Error listing models: 'Model' object has no attribute 'temperature_range'
+
+Testing model: gemini-1.5-flash
+
+Response:
+I am a large language model, trained by Google.  My capabilities include:
+
+* **Text generation:** I can write stories, articles, summaries, poems, code, scripts, musical pieces, email, letters, etc., in response to a wide range of prompts and questions.  I can adapt my style to different needs, from formal to informal.
+
+* **Translation:** I can translate text between multiple languages.
+
+* **Question answering:** I can answer your questions in an informative way, even if they are open ended, challenging, or strange.  I strive to provide accurate and comprehensive answers, but my knowledge cutoff is September 2021.
+
+* **Summarization:** I can summarize factual topics or create summaries of longer pieces of text.
+
+* **Code generation:** I can generate code in various programming languages.  However, I cannot guarantee the code's correctness or efficiency, and it should always be reviewed by a human programmer.
+
+* **Conversation:** I can engage in conversation, answering your questions and following your instructions.
+
+* **Reasoning:** I can perform basic reasoning tasks, but my abilities in this area are still under development.  Complex reasoning may lead to inaccurate or incomplete answers.
+
+**Limitations:**
+
+It's crucial to understand my limitations:
+
+* **Lack of real-world experience:** I don't have personal experiences or feelings.  My knowledge comes from the massive dataset I was trained on.
+* **Potential for biases:** My training data may contain biases, which could be reflected in my responses.  I am constantly being improved to mitigate this.
+* **Inability to access real-time information:**  My knowledge is cut off at September 2021.  I cannot access and process information from the internet or other real-time sources.
+* **Potential for hallucinations:** I may sometimes generate incorrect or nonsensical information, which is often referred to as "hallucinations".  Always verify information from multiple reliable sources.
+
+In short, I am a powerful tool for generating text and answering questions, but I am not a substitute for human judgment or expertise.  My responses should always be critically evaluated.
+
+
+Test successful!
+
+Testing model: gemini-1.5-pro
+Error testing model: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 12
+}
+]
+Error type: ResourceExhausted
+
+API RATE LIMIT OR QUOTA EXCEEDED
+You've hit your API quota or rate limit. Here are some suggestions:
+1. Check your Google AI Studio quota at: https://ai.google.dev/pricing
+2. Try a different model with potentially lower resource requirements
+3. Wait a while before making more requests
+4. Consider upgrading your API tier if needed
+
+Check completed at: 2025-09-03 15:20:50
